@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind-css</title>
+    <script
+      src="https://kit.fontawesome.com/02bd7d7d80.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-pink-300">
+      <nav class="flex justify-between px-24 pt-8">
+        <h1 class="font-extrabold text-3xl">tindog</h1>
+        <ul class="flex space-x-16 font-serif text-2xl">
+          <li>Contact</li>
+          <li>Pricing</li>
+          <li>Download</li>
+        </ul>
+      </nav>
+      <!-- body-section -->
+      <div class="px-24 pt-20 flex">
+        <div>
+          <h1 class="font-extrabold text-6xl">
+            Meet new and interesting dogs nearby.
+          </h1>
+          <div class="pt-20 space-x-10 text-2xl text-white">
+            <button class="bg-black rounded py-2 px-6">
+              <i class="fa-brands fa-apple mr-2"></i>Download
+            </button>
+            <button class="bg-black rounded py-2 px-6">
+              <i class="fa-brands fa-google-play mr-2"></i>Download
+            </button>
+          </div>
+        </div>
+        <div>
+          <img
+            class="mx-auto mr-10 transform rotate-12"
+            src="/src/imgs/iphone6.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex pt-10 justify-between py-24 px-24 space-x-8">
+      <div class="col-span-4 lg:col-span-4">
+        <i class="icon fa-solid fa-circle-check fa-4x my-4"></i>
+        <h3 class="font-bold text-xl">Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+
+      <div class="col-lg-4">
+        <i class="icon fa-solid fa-bullseye fa-4x my-4"></i>
+        <h3 class="font-bold text-xl">Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+      <div class="col-lg-4">
+        <i class="icon fa-solid fa-heart fa-4x my-4"></i>
+        <h3 class="font-bold text-xl">Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+    <!-- swapper section  -->
+    <section class="bg-pink-300">
+      <div class="">
+        <h1>
+          I no longer have to sniff other dogs for love. I've found the hottest
+          Corgi on TinDog. Woof.
+        </h1>
+        <img src="/src/imgs/dog-img.jpg" alt="" />
+        <em>Pebbles, New York</em>
+      </div>
+      <div>
+        <h1>
+          My dog used to be so lonely, but with TinDog's help, they've found the
+          love of their life. I think.
+        </h1>
+        <img src="/src/imgs/lady-img.jpg" alt="" />
+        <em>Beverly, Illinois</em>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#testimonial-carousel"
+        role="button"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#testimonial-carousel"
+        role="button"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </section>
+  </body>
+</html>
